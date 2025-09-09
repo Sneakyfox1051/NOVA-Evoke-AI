@@ -8,7 +8,7 @@ class Config:
     """Configuration class for NOVA API integration."""
     
     # OpenAI API Configuration
-    OPENAI_API_KEY = os.getenv('OPENAI_API_KEY') or "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"
+    OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
     
     # NOVA Assistant Configuration
     ASSISTANT_NAME = "NOVA"

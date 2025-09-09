@@ -38,7 +38,7 @@
 4. **Add your secrets**:
 
 ```toml
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "your_api_key_here"
 OPENAI_ASSISTANT_ID = "asst_XTd5ExJ9KUTLyrFkzkzPZa2f"
 ```
 

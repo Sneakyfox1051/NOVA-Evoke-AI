@@ -28,8 +28,7 @@ class NovaClient:
         self.api_key = (
             api_key or 
             os.getenv('OPENAI_API_KEY') or 
-            st.secrets.get('OPENAI_API_KEY') or
-            "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"
+            st.secrets.get('OPENAI_API_KEY')
         )
         
         if not self.api_key:

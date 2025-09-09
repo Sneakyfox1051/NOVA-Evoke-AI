@@ -8,29 +8,26 @@ import os
 import sys
 
 def create_env_file():
-    """Create a .env file with the API key."""
-    api_key = "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"
-    
+    """Create a .env file template for the API key."""
     try:
         with open('.env', 'w') as f:
-            f.write(f"OPENAI_API_KEY={api_key}\n")
-        print("✅ Created .env file with your API key")
+            f.write("# OpenAI API Configuration\n")
+            f.write("OPENAI_API_KEY=your_api_key_here\n")
+            f.write("OPENAI_ASSISTANT_ID=asst_XTd5ExJ9KUTLyrFkzkzPZa2f\n")
+        print("✅ Created .env template file")
+        print("📝 Please edit .env and add your actual API key")
         return True
     except Exception as e:
         print(f"❌ Failed to create .env file: {e}")
         return False
 
 def set_environment_variable():
-    """Set the environment variable for the current session."""
-    api_key = "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"
-    
-    try:
-        os.environ['OPENAI_API_KEY'] = api_key
-        print("✅ Set OPENAI_API_KEY environment variable for current session")
-        return True
-    except Exception as e:
-        print(f"❌ Failed to set environment variable: {e}")
-        return False
+    """Prompt user to set the environment variable manually."""
+    print("🔑 To set your API key as an environment variable:")
+    print("   Windows PowerShell: $env:OPENAI_API_KEY='your_key_here'")
+    print("   Windows CMD: set OPENAI_API_KEY=your_key_here")
+    print("   Linux/Mac: export OPENAI_API_KEY='your_key_here'")
+    return True
 
 def test_nova_client():
     """Test if NOVA client can be initialized."""

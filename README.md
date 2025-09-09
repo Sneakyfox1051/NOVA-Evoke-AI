@@ -17,8 +17,26 @@ A simple and clean AI assistant interface built with Streamlit and OpenAI.
 pip install -r requirements.txt
 ```
 
-2. Run locally:
+2. Set up your API key:
 ```bash
+# Create .env file with your API key
+python setup_api_key.py
+
+# Or set environment variable directly
+# Windows PowerShell:
+$env:OPENAI_API_KEY="your_api_key_here"
+
+# Windows CMD:
+set OPENAI_API_KEY=your_api_key_here
+
+# Linux/Mac:
+export OPENAI_API_KEY="your_api_key_here"
+```
+
+3. Run locally:
+```bash
+python run_streamlit.py
+# or
 streamlit run streamlit_app.py
 ```
 
