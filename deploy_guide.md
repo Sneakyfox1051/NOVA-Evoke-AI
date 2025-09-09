@@ -38,7 +38,7 @@
 4. **Add your secrets**:
 
 ```toml
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 OPENAI_ASSISTANT_ID = "asst_XTd5ExJ9KUTLyrFkzkzPZa2f"
 ```
 

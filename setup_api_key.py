@@ -9,7 +9,7 @@ import sys
 
 def create_env_file():
     """Create a .env file with the API key."""
-    api_key = "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"
+    api_key = "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"
     
     try:
         with open('.env', 'w') as f:
@@ -22,7 +22,7 @@ def create_env_file():
 
 def set_environment_variable():
     """Set the environment variable for the current session."""
-    api_key = "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"
+    api_key = "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"
     
     try:
         os.environ['OPENAI_API_KEY'] = api_key
